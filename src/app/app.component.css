@@ -1,0 +1,7 @@
+.toolbar {
+  height: 30px;
+  width: auto;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 4px 10px #888888;
+}
