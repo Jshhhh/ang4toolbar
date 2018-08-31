@@ -1,4 +1,5 @@
 .toolbar {
+  display: flex;
   height: 30px;
   width: auto;
   margin: 10px;
