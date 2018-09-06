@@ -1,19 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { pageNav } from './tools/pageNav.component';
-import { dropDown } from './tools/dropDown.component';
-
+import tools from './toolComponents';
 @NgModule({
-  declarations: [
-    AppComponent,
-    pageNav,
-    dropDown
-  ],
+  declarations: [AppComponent, ...tools],
   imports: [
     BrowserModule
   ],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: PathLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

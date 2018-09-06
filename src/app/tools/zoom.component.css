@@ -1,0 +1,10 @@
+.zoomIcons {
+  padding: 5px;
+  border: solid 1px #dee2e6;
+  border-radius: 4px;
+}
+
+.oi {
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+}
