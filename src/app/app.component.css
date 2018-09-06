@@ -2,12 +2,15 @@
   display: flex;
   height: auto;
   width: auto;
+  align-items: center;
+  justify-content: space-between;
   margin: 10px;
-  border: 1px solid black;
+  border: 1px solid grey;
+  border-radius: 4px;
   box-shadow: 2px 4px 10px #888888;
 }
 
-.tools {
-  margin-left: 10px;
-  margin-right: 10px;
+.toolbar > * {
+  height: 38px;
+  margin: 4px 5px 4px 5px;
 }

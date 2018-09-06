@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { pageNav } from './tools/pageNav.component';
+import { dropDown } from './tools/dropDown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    pageNav
+    pageNav,
+    dropDown
   ],
   imports: [
-    BrowserModule,
-    NgbModule
+    BrowserModule
   ],
   bootstrap: [AppComponent]
 })
