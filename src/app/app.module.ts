@@ -8,14 +8,14 @@ import { dropDown } from './tools/dropDown.component';
 import { pageAlign } from './tools/pageAlign.component';
 import { zoom } from './tools/zoom.component';
 
-const toolConfig = require('./toolConfig.json');
-
 @NgModule({
-  declarations: [AppComponent,
+  declarations: [
+    AppComponent,
     pageNav,
     dropDown,
     pageAlign,
-    zoom],
+    zoom
+  ],
   imports: [
     BrowserModule
   ],
@@ -25,6 +25,4 @@ const toolConfig = require('./toolConfig.json');
   }],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  tools = toolConfig;
-}
+export class AppModule { }
