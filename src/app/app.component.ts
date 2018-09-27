@@ -13,19 +13,23 @@ import { zoom } from './tools/zoom.component';
 export class AppComponent {
   tools: Array<any> = [
     {
-        display: "dropDown",
+        name: "dropDown",
+        display: true,
         component: dropDown
     },
     {
-      display: "pageAlign",
+      name: "pageAlign",
+      display: true,
       component: pageAlign
     },
     {
-      display: "pageNav",
+      name: "pageNav",
+      display: true,
       component: pageNav
     },
     {
-      display: "zoom",
+      name: "zoom",
+      display: true,
       component: zoom
     }
   ]
