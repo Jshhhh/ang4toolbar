@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
-
 import { AppComponent } from './app.component';
 import { pageNav } from './tools/pageNav.component';
 import { dropDown } from './tools/dropDown.component';
@@ -10,6 +9,13 @@ import { zoom } from './tools/zoom.component';
 
 @NgModule({
   declarations: [
+    AppComponent,
+    pageNav,
+    dropDown,
+    pageAlign,
+    zoom
+  ],
+  entryComponents: [
     AppComponent,
     pageNav,
     dropDown,
@@ -25,4 +31,5 @@ import { zoom } from './tools/zoom.component';
   }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
