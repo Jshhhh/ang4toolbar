@@ -1,6 +1,6 @@
 <div class="toolbar">
-  <pageNav *ngIf="tools['pageNav']"></pageNav>
-  <dropDown *ngIf="tools['dropDown']"></dropDown>
-  <pageAlign *ngIf="tools['pageAlign']"></pageAlign>
-  <zoom *ngIf="tools['zoom']"></zoom>
+  <div *ngFor="let tool of tools">
+    <ng-container *ngComponentOutlet="tool.component">
+    </ng-container>
+  </div>
 </div>
